@@ -21,11 +21,11 @@ This repository contains six MATLAB `.mat` files, each representing datasets fro
 
 Each `.mat` file contains a primary data structure with each row in each field corresponding to a single session. There are 8 total fields:
 
-- **s**: Trial by trial odor schedule arrays (lower number in pair corresponds to L choice, e.g. 1: L, 2: R)
+- **s**: Trial by trial odor schedule arrays (see t for more information)
 - **a**: Trial by trial action arrays (lower number in pair corresponds to L choice, e.g. 1: L, 2: R)
 - **r**: Trial by trial reward arrays (0 = no reward, 1 = reward)
 - **rt**: Response or reaction time arrays recorded for each trial determined by inter-trial-interval
-- **t**: Used to calculate the number of stimuli
+- **t**: Used to calibrate the L/R schedule size (3,6,8 = 1 or L side; 4,5,7 = 2 or R side)
 - **animal**: Mouse identifiers, stored as strings (e.g., 'A2A-2BWT-NN'), representing different subjects in the study
 - **age**: Mouse ages at the time of each session
 - **correction**: Each session contained a program correction that would
@@ -80,3 +80,13 @@ This folder contains python scripts that were used for Figures 4,5,7-9 in the ma
 
 # Modeling
 
+## Fit and Likelihood folders
+In each of these folders there are 8 scripts that correspond to 8 total models that we compared for fit in AIC/BIC with additional analayses of how frequent a model was used in a single session and protected exceedence probability. See Figure 6 in the main text for additional context and Material and Methods in the paper for equationos. Both folders contain 8 separate files that are named for each of the models, described below: 
+  - **a0b**: a simple RL model with a single alpha positive learning rate (alpha negative learning rate is fixed at 0), and decision noise parameter beta. Corresponds to *no s* in Figure 6.
+  - **a0bs**: same as above, but now with a single strategy parameter, s1. Corresponds to *s* in Figure 6.
+  - **a0bs24**: same as *a0b* but now with two strategy parameters, s2 and s4. Corresponds to *s24* in Figure 6.
+  - **a0bs124**: same as *a0b* but now with three strategy parameters: s1, s2, and s4. Corresponds to *s124* in Figure 6.
+  - **a0bs234**: same as *a0b* but now with three strategy parameters, in a different configuration then above: s2, s3, and s4. Corresponds to *s234* in Figure 6.
+  - **a0bs1234**: same *a0b* but now with all four strategy parameters: s1, s2, s3, and s4. Corresponds to *s1234* in Figure 6.
+  - **a0bs1232**: same *a0b* but now, following correlation analysis, s2==s4 and there are three strategy parameters: s1,s2=s4,s3. Corresponds to *s1232* in Figure 6.
+  - **aabs1232**: same as *a0bs1232* but instead of alpha negative fixed at 0, there are two alpha learning parameters corresponding to learning from both positive and negative outcomes. Corresponds to *aa* in Figure 6.
