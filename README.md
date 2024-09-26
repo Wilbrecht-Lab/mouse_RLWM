@@ -31,7 +31,7 @@ Each `.mat` file contains a primary data structure with each row in each field c
 ## processed_data
 This repository contains 2 `.csv` files that include a subset of sessions for each animal. Each session is a row, similar to raw_data, and columns include regression coefficients for regressions 1-3 and our winning model (s2 refers to s2=s4)
 
-### file structure
+### file structure for *"all_age"* .csv files
 
 1. Session Identifiers:
     - **animal_idx**: Unique identifier for each animal
@@ -51,6 +51,12 @@ This repository contains 2 `.csv` files that include a subset of sessions for ea
     - **s1**: strategy parameter 1, *"Inappropriate Lose-Shift"*
     - **s2**: strategy parameter 2=4, *"Stimulus Insensitive Win Stay"*
     - **s3**: strategy parameter 3, *"Inappropriate Lose-Stay"*
+
+### file structure for *"fig_2a"* .csv file
+File tabs correspond to male/female mice from either set size = 2 (sz2) or set size = 4 (sz4). They are either binned for "uni_stim," meaning that each column corresponds to the fraction correct from 25 single stimulus presentations or averaged together following binning by odor. In "uni_stim" tabs every 2 rows correspond to a single session for a single animal (every 4 for sz4) and in each "avg" tab, every individual row corresponds to a single session.
+
+### file structure for *"model comparison"* file
+Summary table of AIC/BIC/AICc/CAIC for 6 regressions for each session run for both males and females in set size = 2. 
 
 # Regression 
 This folder contains MATLAB code for running 6 logistic regression analyses and in order to derive the coefficients found in the processed data. 
