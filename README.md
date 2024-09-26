@@ -62,4 +62,6 @@ This folder contains MATLAB code for running 6 logistic regression analyses and 
    - **repeat_reward_reg**: Regression #4
    - **repeat_reward_interaction_reg**: Regression #5
    - **reward_repeat_nrepeat_common_reg**: Regression #6
+
+
 All data from running regressions that was used for model comparison (AIC/BIC/AICc/CAIC) can be found in /data/processed_data
