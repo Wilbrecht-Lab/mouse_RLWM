@@ -53,3 +53,13 @@ This repository contains 2 `.csv` files that include a subset of sessions for ea
     - **s3**: strategy parameter 3, *"Inappropriate Lose-Stay"*
 
 # Regression 
+This folder contains MATLAB code for running 6 logistic regression analyses and in order to derive the coefficients found in the processed data. 
+
+1. Regressions:
+   - **trial_back_reg**: Regression #1
+   - **repeat_nrepeat_common_reg**: Regression #2 (tied for AIC/BIC, regression presented in supplemental)
+   - **reward_nreward_common_reg**: Regression #3 (tied for AIC/BIC, regression presented in main text)
+   - **repeat_reward_reg**: Regression #4
+   - **repeat_reward_interaction_reg**: Regression #5
+   - **reward_repeat_nrepeat_common_reg**: Regression #6
+All data from running regressions that was used for model comparison (AIC/BIC/AICc/CAIC) can be found in /data/processed_data
