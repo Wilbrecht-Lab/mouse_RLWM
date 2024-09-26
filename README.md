@@ -5,7 +5,7 @@ Computational modeling has revealed that human research participants use both ra
 
 
 
-Below is a brief description of the folders and files contained within this directory:  
+### Below is a brief description of the folders and files contained within this directory:  
 # Data
 
 - **raw_data**: contains all mouse session behavioral data.
