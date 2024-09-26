@@ -60,6 +60,13 @@ File tabs correspond to male/female mice from either set size = 2 (sz2) or set s
 ### file structure for *"model comparison"* file
 Summary table of AIC/BIC/AICc/CAIC for 6 regressions for each session run for both males and females in set size = 2. 
 
+## sim_data
+For each sex and set size (and for gdx animals) there is a .mat file that contains three variables for the winning model with each row corresponding to a single session:
+  -**Xfit_a0bs1232**: variable containing 5 columns that correspond to the 5 simulated parameters from winning model: alpha+, beta, s1, s2=s4, s3
+  -**ll_a0bs1232**: log likelihood number for each individual session
+  -**idx_a0bs1232**: animal identity 
+
+
 # Regression 
 This folder contains MATLAB code for running 6 logistic regression analyses and in order to derive the coefficients found in the processed data. 
 
