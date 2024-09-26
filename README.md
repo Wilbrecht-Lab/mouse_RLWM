@@ -51,3 +51,5 @@ This repository contains 2 `.csv` files that include a subset of sessions for ea
     - **s1**: strategy parameter 1, *"Inappropriate Lose-Shift"*
     - **s2**: strategy parameter 2=4, *"Stimulus Insensitive Win Stay"*
     - **s3**: strategy parameter 3, *"Inappropriate Lose-Stay"*
+
+# Regression 
