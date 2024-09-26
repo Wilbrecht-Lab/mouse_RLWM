@@ -103,3 +103,6 @@ This folder contains multiple MATLAB scripts for model validation and comparison
   - **generate_recover**: this script is for generate recover of mice data 
   - **reg_compare**: compares regression results from mouse data with simulated data (barplots)
   - **sess_reg_compare**: compares regression results from mouse data with simulated data (scatterplots). Should be run with *reg_compare*.
+
+## Helpers
+This folder contains helper functions in order to run other scripts
