@@ -55,7 +55,7 @@ This repository contains 2 `.csv` files that include a subset of sessions for ea
     - **s3**: strategy parameter 3, *"Inappropriate Lose-Stay"*
 
 ### file structure for *"fig_2a"* .csv file
-File tabs correspond to male/female mice from either set size = 2 (sz2) or set size = 4 (sz4). They are either binned for "uni_stim," meaning that each column corresponds to the fraction correct from 25 single stimulus presentations or averaged together following binning by odor. In "uni_stim" tabs every 2 rows correspond to a single session for a single animal (every 4 for sz4) and in each "avg" tab, every individual row corresponds to a single session.
+File tabs correspond to male/female mice from either set size = 2 (sz2) or set size = 4 (sz4). They are either binned for "uni_stim," meaning that each column corresponds to the fraction correct from 25 single stimulus presentations or averaged together following binning by odor. In "uni_stim" tabs every 2 rows correspond to a single session for a single animal (every 4 for sz4) and in each "avg" tab, every individual row corresponds to a single session. The data from the "avg" tabs were lifted and placed in GraphPad Prism for visualization and analysis. 
 
 ### file structure for *"model comparison"* file
 Summary table of AIC/BIC/AICc/CAIC for 6 regressions for each session run for both males and females in set size = 2. 
@@ -83,7 +83,7 @@ All data from running regressions that was used for model comparison (AIC/BIC/AI
 
 # Analysis_code
 
-This folder contains python scripts that were used for Figures 4,5,7-9 in the main text and Figures 5-6 in the supplement. In order to run the script, you must have downloaded *`all_age_regression.csv`* from the **processed_data** folder in **data**. 
+This folder contains python scripts that were used for Figures 4,5,7-9 in the main text and Figures 5-6 in the supplement. It also contains the code used to run mixed linear models to produce the stats reported in the main text. In order to run the script, you must have downloaded *`all_age_regression.csv`* from the **processed_data** folder in **data**. 
 
 # Modeling
 
