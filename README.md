@@ -99,11 +99,11 @@ In each of these folders there are 8 scripts that correspond to 8 total models t
   - **aabs1232**: same as *a0bs1232* but instead of alpha negative fixed at 0, there are two alpha learning parameters corresponding to learning from both positive and negative outcomes. Corresponds to *aa* in Figure 6.
 
 ## Model comparison folder
-This folder contains multiple MATLAB scripts for model validation and comparison. All scripts require raw MATLAB data (e.g., `data_male_ns2.mat`)
+This folder contains multiple MATLAB scripts for model validation and comparison. All scripts require raw MATLAB data (e.g., `data_male_ns2.mat`) as well as the corresponding maximum likelihood .mat file
   - **generate_recover**: this script is for generate recover of mice data. The number of iterations should be set to include the number of sessions in the data set
   - **reg_compare**: compares regression results from mouse data with simulated data (barplots)
   - **sess_reg_compare**: compares regression results from mouse data with simulated data (scatterplots). Should be run with *reg_compare*.
-  - **ModelValidation**: creates a learning curve binned by 25 trials for the winning model only using *online_simulation_compare_binned.m*
+  - **ModelValidation**: creates a learning curve binned by 25 trials for the winning model only using *online_simulation_compare_binned.m* 
   - **online_simulation_compare_binned.m**: function that bins data by 25 trials per odor and compares to simulated mouse data. num_trial describes the number of bins (25 trials per odor stim) and can be adjusted. We chose 8 (200 presentations of each odor stimulation) for our data analysis.
 
 ## Helpers
