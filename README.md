@@ -95,7 +95,7 @@ In each of these folders there are 8 scripts that correspond to 8 total models t
   - **a0bs124**: same as *a0b* but now with three strategy parameters: s1, s2, and s4. Corresponds to *s124* in Figure 6.
   - **a0bs234**: same as *a0b* but now with three strategy parameters, in a different configuration then above: s2, s3, and s4. Corresponds to *s234* in Figure 6.
   - **a0bs1234**: same *a0b* but now with all four strategy parameters: s1, s2, s3, and s4. Corresponds to *s1234* in Figure 6.
-  - **a0bs1232**: same *a0b* but now, following correlation analysis, s2==s4 and there are three strategy parameters: s1,s2=s4,s3. Corresponds to *s1232* in Figure 6.
+  - **a0bs1232**: same *a0b* but now, following correlation analysis, s2==s4 and there are three strategy parameters: s1,s2=s4,s3. Corresponds to *s1232* in Figure 6. This is our winning model.
   - **aabs1232**: same as *a0bs1232* but instead of alpha negative fixed at 0, there are two alpha learning parameters corresponding to learning from both positive and negative outcomes. Corresponds to *aa* in Figure 6.
 
 ## Model comparison folder
