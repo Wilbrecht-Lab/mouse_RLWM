@@ -33,9 +33,6 @@ Each `.mat` file contains a primary data structure with each row in each field c
 ## processed_data
 This repository contains 2 `.csv` files that include a subset of sessions for each animal. Each session is a row, similar to raw_data, and columns include regression coefficients for regressions 1-3 and our winning model (s2 refers to s2=s4)
 
-## sim_data
-This folder contains a series of .mat files that each contain 
-
 ### file structure for *"all_age"* .csv files
 
 1. Session Identifiers:
@@ -67,7 +64,7 @@ Summary table of AIC/BIC/AICc/CAIC for 6 regressions for each session run for bo
 For each sex and set size (and for gdx animals) there is a .mat file that contains three variables for the winning model with each row corresponding to a single session:
   - **Xfit_a0bs1232**: variable containing 5 columns that correspond to the 5 simulated parameters from winning model: alpha+, beta, s1, s2=s4, s3
   - **ll_a0bs1232**: log likelihood number for each individual session
-  - **idx_a0bs1232**: animal identity 
+  - **idx_a0bs1232**: each number represents the iteration (in different random walks) that produced the best-fitting parameters (with the minimum NLL).
 
 
 # Regression 
