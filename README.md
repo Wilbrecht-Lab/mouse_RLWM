@@ -97,6 +97,8 @@ In each of these folders there are 8 scripts that correspond to 8 total models t
   - **a0bs1234**: same *a0b* but now with all four strategy parameters: s1, s2, s3, and s4. Corresponds to *s1234* in Figure 6.
   - **a0bs1232**: same *a0b* but now, following correlation analysis, s2==s4 and there are three strategy parameters: s1,s2=s4,s3. Corresponds to *s1232* in Figure 6. This is our winning model.
   - **aabs1232**: same as *a0bs1232* but instead of alpha negative fixed at 0, there are two alpha learning parameters corresponding to learning from both positive and negative outcomes. Corresponds to *aa* in Figure 6.
+### Likelihood/ml_data_files
+This folder contains data files with maximum likelihood fits for all the models that we tested. These are required (in addition to raw data files such as 'data_male_ns2.mat') in order to run most scripts in the model comparison folder. They are separated by set size and sex (which is the most straightforward way to run the data), but there is also a file for all gdx/sham and all intact mice if you would rather not separate by set size.
 
 ## Model comparison folder
 This folder contains multiple MATLAB scripts for model validation and comparison. All scripts require raw MATLAB data (e.g., `data_male_ns2.mat`) as well as the corresponding maximum likelihood .mat file
