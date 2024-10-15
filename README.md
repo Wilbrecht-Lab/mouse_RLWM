@@ -110,4 +110,4 @@ This folder contains multiple MATLAB scripts for model validation and comparison
   - **online_simulation_compare_binned.m**: function that bins data by 25 trials per odor and compares to simulated mouse data. num_trial describes the number of bins (25 trials per odor stim) and can be adjusted. We chose 8 (200 presentations of each odor stimulation) for our data analysis.
 
 ## Helpers
-This folder contains helper functions in order to run other scripts
+This folder contains helper functions in order to run other scripts. Some of these are from MATLAB file_sharing and some were derived by us. Where these are scripts that are from MATLAB users, none of the script has been altered and credit goes to the original creator who is credited within the function. 
